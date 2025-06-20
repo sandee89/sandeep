@@ -1,11 +1,4 @@
-Here is a complete AI Chatbot code in one slide (single Python script) using the ChatterBot library for basic interaction. It includes setup, training, and a loop for user conversation.
 
-
----
-
-✅ AI Chatbot – Full Code (Python)
-
-# AI Chatbot using ChatterBot
 
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
