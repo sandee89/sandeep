@@ -27,7 +27,7 @@ while True:
 
 pip install chatterbot chatterbot_corpus
 
-> 💡 This is ideal for basic conversations. For advanced GPT-based bots, OpenAI API can be used. Let me know if you want that version too.
+
 
 
 
