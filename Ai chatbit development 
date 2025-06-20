@@ -1,0 +1,40 @@
+Here is a complete AI Chatbot code in one slide (single Python script) using the ChatterBot library for basic interaction. It includes setup, training, and a loop for user conversation.
+
+
+---
+
+✅ AI Chatbot – Full Code (Python)
+
+# AI Chatbot using ChatterBot
+
+from chatterbot import ChatBot
+from chatterbot.trainers import ChatterBotCorpusTrainer
+
+# Create chatbot instance
+chatbot = ChatBot('AI Assistant')
+
+# Train the chatbot on English corpus data
+trainer = ChatterBotCorpusTrainer(chatbot)
+trainer.train('chatterbot.corpus.english')
+
+# Chat loop
+print("AI Chatbot is ready! Type 'exit' to stop.")
+while True:
+    user_input = input("You: ")
+    if user_input.lower() in ['exit', 'quit']:
+        print("Bot: Goodbye!")
+        break
+    response = chatbot.get_response(user_input)
+    print("Bot:", response)
+
+
+---
+
+📌 Before Running: Install Libraries
+
+pip install chatterbot chatterbot_corpus
+
+> 💡 This is ideal for basic conversations. For advanced GPT-based bots, OpenAI API can be used. Let me know if you want that version too.
+
+
+
